@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="evilmanu8024.css">
+</head>
+    
+<body>  
+    <script src="nullmanu8024.js"></script>
+    
+
+<!--linkinparking (Xero mode)-->
+<div class="header">
+
+    <div class="audiothing">
+    <audio id="Fuse" class="Fusion">
+        <source src="audio/03 Fuse (2019 Remastered).mp3" type="audio/mp3">
+        
+    </audio>
+    <audio id="Stick" class="Sticking">
+        <source src="audio/04 Stick N Move (2019 Remastered).mp3" type="audio/mp3">
+    </audio>
+    <audio id="Closing" class="Close">
+        <source src="audio/Xero - Closing - Linkin Park Live Archive.mp3" type="audio/mp3">
+    </audio>
+    <div class="mimimiContainer">
+    <img onclick="playSequence()" src="img/Sound1.png" width="50px" height="70px" class="mimimi"/>
+    <img onclick="playSequence()" src="img/Sound2.png" width="50px" height="70px" class="mimimi2"/>
+    </div>
+    <div class="songbox">
+        <h3 class="playing">Now Playing:</h2>
+        <p id="Author1" style="display: none;" class="by1">Fuse by Xero 818</p>
+        <p id="Author2" style="display: none;" class="by2">Stick N'Move by Xero 818</p> 
+        <p id="Author3" style="display: none;" class="by3">Closing by Xero 818</p>   
+    </div>
+    
+    
+    <script>
+
+
+        function playSequence() {
+    const Fuse = document.getElementById('Fuse');
+    const Stick = document.getElementById('Stick');
+    const Closing = document.getElementById('Closing');
+    const Author1 = document.getElementById('Author1');
+    const Author2 = document.getElementById('Author2');
+    const Author3 = document.getElementById('Author3');
+
+    Fuse.play();
+
+    Author1.style.display = "block";
+
+
+
+    Fuse.addEventListener('ended', () => {
+      Author1.style.display = "none";  
+      Stick.play();
+      Author2.style.display = "block";
+    });
+    
+    Stick.addEventListener('ended', () => {
+      Author2.style.display = "none";
+      Closing.play();
+      Author3.style.display = "block"
+    });
+
+    Closing.addEventListener('ended', () => {
+      Author3.style.display = "none"  
+    });
+  }
+
+
+  
+
+
+    </script>
+    
+</div>
+</div>
+
+<!--End-->
+
+<!--HomePageThing-->
+
+<div class="nickname">
+    <img src="img/Mnu.png" alt="">
+</div>
+
+<div  class="gigaContainer">
+
+    <div class="main">
+        <div class="square"></div>
+    </div>
+    
+<!--Links Window-->
+    <div class="square3">
+        <div class="square7">
+            <img class="link" src="img/Links.png" alt="">
+        </div>
+        <img class="linked" src="img/clicklink.gif" alt="">
+        <button onclick=showPopUp() class="button1" id="buttoner1">
+            Here
+        </button>
+    </div>
+     
+<!--Work Window-->   
+    <div class="square8">
+        <div class="square10">
+            <img class="work" src="img/Work.png" alt="">
+        </div>
+        <img class="gallery" src="img/carpet.gif" alt="" />
+        <button onclick=showPopUp2() class="button2">
+            Here
+        </button>
+    </div>
+    
+
+<!--Here goes the "Links" window pop-up
+                        ||
+                        ||
+                        ||
+                        \/
+-->
+
+<dialog class="tree" id="pop-up">
+        
+        <div class="allpoppie" id="popper1">
+
+    <div class="buttoncancelContainer">
+        <div class="closerContainer" onclick=closePopUp() type="button">
+            <img class="closer" src="img/close.png" width="50px" height="50px" alt="">
+            <img class="closer2" src="img/close2.png" width="50px" height="50px" alt="">
+        </div>
+    </div>
+
+    <div class="blueheaderContainer">
+        <div class="square12">
+            <p class="textlinks">Links!!!</p> 
+        </div>
+    </div>
+
+    <div class="iconsContainer">
+        
+        <a style="text-decoration: none;" href="https://www.tumblr.com/mnu8024">
+<div class="tumblrContainer">
+        <img class= "tumblr" src="img/tumblr.png" alt="">
+        <div class="tumblr-p">
+        <p>tumblr</p>
+    </div>
+</div>
+</a>
+
+    <a style="text-decoration: none;" href="https://x.com/mnu8024">
+<div class="twitterContainer">
+        <img class="twitter" src="img/twitter.png" alt="">
+        <div class="twitter-p">
+        <p>twitter</p>
+    </div>
+</div>
+</a>
+
+    <a style="text-decoration: none;" href="https://mnu8024.newgrounds.com/">
+<div class="newgroundsContainer">
+        <img class="newgrounds" src="img/newgrounds.png" alt="">
+        <div class="newgrounds-p">
+        <p>newgrounds</p>
+        </div>
+</div>
+</a>
+
+    <a style="text-decoration: none;" href="https://ko-fi.com/mnu8024">
+<div class="kofiContainer">
+        <img class="kofi" src="img/kofi.png" alt="">
+        <div class="kofi-p">
+        <p>ko-fi</p>
+        </div>
+</div>
+</a>
+</div>
+</div>
+    </dialog>
+
+    <script>
+        const dialog = document.getElementById("pop-up");
+        const allpoppie = document.querySelector(".allpoppie");
+        function showPopUp() {
+            dialog.showModal()
+        }
+        function closePopUp() {
+            dialog.close()
+        }
+        dialog.addEventListener("click", (e) => {
+        if(!allpoppie.contains(e.target)) {
+            dialog.close()
+        }
+        })
+
+    </script>
+
+<!--End of the "Links" pop-up-->
+
+<!--Here goes the "Work" window pop-up
+                        ||
+                        ||
+                        ||
+                        \/
+-->
+
+<dialog class="tripper" id="bush">
+        
+        <div class="allpoppie2">
+
+    <div class="buttoncancelContainer2">
+        <div class="closerContainer2" onclick=closePopUp2() type="button">
+            <img class="closer3" src="img/close.png" width="50px" height="50px" alt="">
+            <img class="closer4" src="img/close2.png" width="50px" height="50px" alt="">
+        </div>
+    </div>
+
+    <div class="blueheaderContainer2">
+        <div class="square13">
+            <p class="textWork">Work!!!</p> 
+        </div>
+    </div>
+
+</div>
+</div>
+    </dialog>
+
+    <script>
+        const bush = document.getElementById('bush');
+        const allpoppie2 = document.querySelector(".allpoppie2");
+        function showPopUp2() {
+            bush.showModal()
+        }
+        function closePopUp2() {
+            bush.close()
+        }
+        bush.addEventListener("click", (e) => {
+        if(!allpoppie2.contains(e.target)) {
+            bush.close()
+        }
+        })
+    </script>
+
+
+
+<!--End of the "Work" pop-up-->
+    
+
+    
+     <div class="copy">
+     <footer class="foot">
+        © 2025 Manuel Cajar 
+     </footer>
+     <br>
+     </div>
+     </div>
+    </body>
+</html>

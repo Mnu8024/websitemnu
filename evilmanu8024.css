@@ -1,0 +1,531 @@
+
+body{
+    background-color: rgb(60, 77, 87);
+    zoom: 70%;
+    background-image: url("img/robloxsky.png"); /* Replace with your image */
+  background-repeat: repeat;
+  background-position: 0 0;
+  animation: diagonal-move 50s linear infinite; /* 10s duration, infinite loop, linear timing */
+}
+
+@keyframes diagonal-move{
+  0% {
+    background-position: 100% 100%; /* Starting position */
+  }
+  100% {
+    background-position: 0% 0%; /* Ending position */
+  }
+}
+
+@keyframes scaler {
+    from { transform: scale(0.2); }
+    to { transform: scale(1); }
+}
+
+.songbox{
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  position: fixed;
+  margin-left: 80px;
+  margin-top: -30px;
+  font-family: 'Trebuchet MS';
+  color: white;
+}
+
+.by1{
+  position: relative;
+  top: -30px;
+  color: rgb(211, 211, 211);
+
+}
+.by2{
+  position: relative;
+  top: -30px;
+  color: rgb(211, 211, 211);
+}
+.by3{
+  position: relative;
+  top: -30px;
+  color: rgb(211, 211, 211);
+}
+
+.mimimiContainer{
+    position: relative; 
+    position: fixed; top: 20px;
+    width: 40px; 
+    height: 60px; 
+    cursor: pointer;
+    z-index: 1;
+    
+}
+
+ .mimimi, .mimimi2 {
+    position: absolute; 
+    top: 10px;
+    left: 20px;
+    width: 100%;
+    height: 100%;
+    
+  }
+
+  .mimimi2{
+    display: none;
+  }
+
+  .mimimiContainer:hover .mimimi2{
+    display: block;
+  }
+
+
+ .gigaContainer{
+    display: flex;
+    justify-content: center;
+    margin-top: -150px;
+
+  }
+
+.nickname{
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.main{
+  display: flex;
+  justify-items: center;
+  margin-top: 250px;
+}
+
+   .square{
+    width: 1200px;
+    height: 720px;
+    background-color: rgb(25, 37, 44); 
+    position: relative; top: -50px; right: -200px;
+    margin: 0;
+  }
+
+
+.link{
+    width: 40px;
+    height: 16px;
+    position: relative; right: -10px; bottom: -15px;
+  }
+
+.square3{
+    width: 350px;
+    height: 250px;
+    background-color: rgb(216, 195, 195);
+    margin-top: 10px;
+    position: relative; right: -250px; bottom: -189px;
+    border: solid;
+    border-color: rgb(0, 45, 56);
+    border-image: linear-gradient(to bottom,  rgb(0, 45, 56),  rgb(0, 8, 10)) 1;
+    border-top-width: 40px;
+    box-shadow: 20px 20px black;
+    }
+
+.square7{
+    width: 355px;
+    height: 40px;
+    background-color: rgb(39, 70, 77);
+    background: linear-gradient(to top, rgb(39, 70, 77)10%,rgb(0, 45, 56)80%, rgba(247, 249, 255, 0.245));
+    position: relative; right: 2px; bottom: 40px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border: solid;
+    border-color: rgb(0, 45, 56);
+    border-left: 0px;
+    border-top: 0px;
+    border-right: 0px;
+}
+    
+    .name{
+      width: 170px;
+      height: 65px;
+      position: relative; right: -185px; bottom: -150px;
+
+    }
+
+  .button1{
+    width: 110px;
+    height: 30px;
+    background-color: rgb(181, 167, 167);
+    border-left: none;
+    border-top: none;
+    position: relative; right: 7px; bottom: -30px;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+    cursor: pointer;
+
+  }
+
+  .button1:hover{
+    width: 110px;
+    height: 30px;
+    border: solid;
+    border-width: 1px;
+    border-bottom: none;
+    border-right: none;
+    position: relative; right: 7px; bottom: -30px;
+    transform: scale(1.1);
+  }
+
+  
+    
+.work{
+    width: 45px;
+    height: 28px;
+    position: relative; bottom: -9px; right: -8px;
+  }
+
+  .square8{
+    width: 350px;
+    height: 250px;
+    background-color: rgb(216, 195, 195);
+    margin-top: 10px;
+    position: relative; right: 105px; bottom: -600px;
+    border: solid;
+    border-color: rgb(0, 45, 56);
+    border-image: linear-gradient(to bottom,  rgb(0, 45, 56),  rgb(0, 8, 10)) 1;
+    border-top-width: 40px;
+    box-shadow: 20px 20px black;
+    }
+
+  .square10{
+    width: 355px;
+    height: 40px;
+    background-color: rgb(39, 70, 77);
+    background: linear-gradient(to top, rgb(39, 70, 77)10%,rgb(0, 45, 56)80%, rgba(247, 249, 255, 0.245));
+    position: relative; top: -40px; right: 2px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border: solid;
+    border-color: rgb(0, 45, 56);
+    border-left: 0px;
+    border-top: 0px;
+    border-right: 0px;
+    
+  }
+
+  .button2{
+    width: 110px;
+    height: 30px;
+    background-color: rgb(181, 167, 167);
+    border-left: none;
+    border-top: none;
+    position: relative; right: 105px; bottom: 70px;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+    cursor: pointer;
+
+  }
+
+  .button2:hover{
+    width: 110px;
+    height: 30px;
+    border: solid;
+    border-width: 1px;
+    border-bottom: none;
+    border-right: none;
+    position: relative; right: 105px; bottom: 70px;
+    transform: scale(1.1);
+  }
+
+
+
+/*First Pop-up*/
+
+.buttoncancelContainer{
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  cursor: pointer;
+}
+
+.closerContainer{
+  position: relative; 
+  width: 50px;
+  height: 50px;
+}
+
+.closer, .closer2{
+  position: absolute; 
+  top: 0px;
+  left: 0px;
+}
+
+.closer2{
+  display: none;
+}
+
+.closerContainer:hover .closer2{
+  display: block;
+  
+}
+
+.blueheaderContainer{
+  position: relative;
+  top: -85px;
+  right: 0px;
+  z-index: -1;
+  
+}
+
+.square12{
+    width: 730px;
+    height: 100px;
+    background-color: rgb(0, 84, 106);
+    border: solid;
+    border-color:  rgb(0, 53, 88);
+    border-top: none;
+    border-right: none;
+    border-left: none;
+}
+
+.textlinks{
+  position: relative; top: 30px;
+  margin-left: 30px;
+  font-size: 35px;
+  color: white;
+  font-family: 'Trebuchet MS';
+  letter-spacing: 10px;
+}
+
+dialog{
+  padding: 0;
+}
+
+dialog .allpoppie{
+  width: 100%;
+  height: 100%;
+  animation: fadeIn 0.5s ease-in-out;
+  
+}
+
+  .tree{
+    width: 730px;
+    height: 450px;
+    background-color: rgb(149, 133, 133);
+    border: solid;
+    border-top: none;
+    border-left: none;
+    border-color: black;
+    animation: scaler 0.1s ease-in-out;
+  }
+
+  
+.linked{
+    width: 125px;
+    height: 125px;
+    position: relative; right: -125px; bottom: 0px;
+  }
+
+.gallery{
+  width: 225px;
+  height: 225px;
+  position: relative; right: -58px; bottom: 70px; 
+}
+
+.iconsContainer{
+ display: flex;
+ justify-content: center;
+ position: relative; bottom: 50px;
+ gap: 50px;
+ 
+}
+
+.tumblrContainer{
+  width: 60px;
+  height: 90px;
+  transition: transform ease 0.2s;  
+  text-decoration: none;
+  color: black;
+}
+
+.tumblrContainer:hover{
+  width: 60px;
+  height: 90px;
+  transform: scale(1.1);
+}
+
+.twitterContainer{
+  width: 110px;
+  height: 90px;
+  transition: transform ease 0.2s;
+  text-decoration: none;
+  color: black;
+}
+
+.twitterContainer:hover{
+  width: 110px;
+  height: 90px;
+  transform: scale(1.1);
+}
+
+.newgroundsContainer{
+  width: 110px;
+  height: 90px;
+  transition: transform ease 0.2s;
+  text-decoration: none;
+  color: black;
+}
+
+.newgroundsContainer:hover{
+  width: 110px;
+  height: 90px;
+  transform: scale(1.1);
+}
+
+.kofiContainer{
+  width: 110px;
+  height: 90px;
+  transition: transform ease 0.2s;
+  text-decoration: none;
+  color: black;
+}
+
+.kofiContainer:hover{
+  width: 110px;
+  height: 90px;
+  transform: scale(1.1);
+}
+
+.tumblr{
+  width: 60px;
+  height: 90px;
+}
+
+.twitter{
+  width: 110px;
+  height: 90px;
+}
+
+.newgrounds{
+  width: 100px;
+  height: 90px;
+}
+
+.kofi{
+  width: 100px;
+  height: 90px;
+}
+ 
+.tumblr-p{
+  display: flex;
+  justify-content: center;
+  position: relative; left: 7px;
+  font-family: 'Trebuchet MS';
+  letter-spacing: 2px;
+  
+
+}
+
+.twitter-p{
+  display: flex;
+  justify-content: center;
+  font-family: 'Trebuchet MS';
+  letter-spacing: 2px;
+}
+
+.newgrounds-p{
+  display: flex;
+  justify-content: center;
+  position: relative; left: -5px;
+  font-family: 'Trebuchet MS';
+  letter-spacing: 2px;
+  
+  
+}
+
+.kofi-p{
+  display: flex;
+  justify-content: center;
+  position: relative; right: 10px;
+  font-family: 'Trebuchet MS';
+  letter-spacing: 2px;
+}
+
+/*Second Pop-up*/
+
+dialog .allpoppie2{
+  width: 100%;
+  height: 100%;
+}
+
+.tripper{
+  width: 730px;
+    height: 450px;
+    background-color: rgb(149, 133, 133);
+    border: solid;
+    border-top: none;
+    border-left: none;
+    border-color: black;
+    animation: scaler 0.1s ease-in-out;
+}
+
+.buttoncancelContainer2{
+  display: flex;
+  justify-content: flex-end;
+  position: relative
+}
+
+.closerContainer2{
+  position: relative; 
+  width: 50px;
+  height: 50px;
+}
+
+.closer3, .closer4{
+  position: absolute; 
+  top: 0px;
+  left: 0px;
+}
+
+.closer4{
+  display: none;
+}
+
+.closerContainer2:hover .closer4{
+  display: block;
+  
+}
+
+.textWork{
+  position: relative; top: 30px;
+  margin-left: 30px;
+  font-size: 35px;
+  color: white;
+  font-family: 'Trebuchet MS';
+  letter-spacing: 10px;
+}
+
+.blueheaderContainer2{
+  position: relative;
+  top: -85px;
+  right: 0px;
+  z-index: -1;
+}
+
+.square13{
+    width: 730px;
+    height: 100px;
+    background-color: rgb(0, 84, 106);
+    border: solid;
+    border-color:  rgb(0, 53, 88);
+    border-top: none;
+    border-right: none;
+    border-left: none;
+}
+
+/*Footer*/
+
+.copy{
+  width: 200px;
+  position: fixed;
+  bottom: 0;
+}
+
+.foot{
+  font-family: 'Trebuchet MS';
+  position: relative; left: 5em;
+}
+
