@@ -1,5 +1,5 @@
 {
   "rewrites": [
-    { "source": "/page", "destination": "/page/index.html" }
+    { "source": "/Xanthophobia", "destination": "/Xanthophobia/index.html" }
   ]
 }
