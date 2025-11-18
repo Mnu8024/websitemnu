@@ -1,5 +1,0 @@
-{
-  "rewrites": [
-    { "source": "/Xanthophobia", "destination": "/Xanthophobia/index.html" }
-  ]
-}
